@@ -1,3 +1,9 @@
+  # ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+
 def alphabetize(arr)
-  # code here
+  esp_alph = " abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  ascii = "@-\\"
+  arr.sort_by do |string|
+    string.tr(esp_alph, ascii)
+  end
 end
